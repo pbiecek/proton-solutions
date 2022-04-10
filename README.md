@@ -6,6 +6,10 @@ For the last 6 years, we have been using this game in the first classes of data 
 
 This repository contains anonymized solutions from 10 different classes from 2017 till 2022. All together you will find 336 solutions. You can look at them to see what approaches students used in different courses.
 
+## Python
+
+If you are looking for Python version of the proton game, check out this link https://github.com/BetaAndBit/BetaBitPython
+
 ## List of source repositories
 
 ```
