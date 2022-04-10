@@ -4,7 +4,7 @@ Proton is one of the games that can be played in the R console. Along with sever
 
 For the last 6 years, we have been using this game in the first classes of data exploration courses in order to get a feel for the students' proficiency and knowledge of the R. A well-prepared student should get through the entire game in a few minutes. So if someone has a problem with it that lasts longer than 30 minutes it means they need to repeat the basics of R.
 
-This repository contains anonymized solutions from 10 different classes from 2017 till 2020. All together you will find 336 solutions. You can look at them to see what approaches students used in different courses.
+This repository contains anonymized solutions from 10 different classes from 2017 till 2022. All together you will find 336 solutions. You can look at them to see what approaches students used in different courses.
 
 ## List of source repositories
 
