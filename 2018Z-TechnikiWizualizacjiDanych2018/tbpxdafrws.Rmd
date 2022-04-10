@@ -1,0 +1,14 @@
+---
+title: "Zadanie_proton"
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r cars}
+employees
+employees[employees$name=='John',]
+```
+```{r cars}
+top1000passwords
+```

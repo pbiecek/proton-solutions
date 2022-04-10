@@ -1,0 +1,12 @@
+library(BetaBit)
+proton()
+library(dplyr)
+log<-filter(employees, name=="John", surname=="Insecure")$login
+proton(action = "login", login=log)
+for(i in top1000passwords){
+  if(proton(action = "login", login=log, password=i)=="Success! User is logged in!") break
+}
+pietr<-filter(employees, surname=="Pietraszko")$login
+logP<-filter(tabela, login==pietr)
+stacja<-names(summary(logP$host))[1]
+proton(action = "server", host=stacja)

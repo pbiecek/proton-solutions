@@ -1,0 +1,65 @@
+---
+title: "Proton exploration"
+author: "Przemysław Biecek"
+output: html_document
+---
+
+# Encode filenames
+
+First - anonymize files related to proton
+
+```{r}
+files <- list.files(recursive = TRUE)
+set.seed(13)
+
+for (f in files) {
+  root <- gsub(f, pattern = "/.*$", replacement = "")
+  extn <- paste0(".",gsub(f, pattern = "^.*\\.", replacement = ""))
+  if (nchar(extn) > 5) extn = ""
+  newn <- paste(sample(letters, 10), collapse = "")
+  
+  fnew <- paste0(root, "/", newn, extn)
+  cat(f, " -> ", fnew, "\n")
+  file.rename(f, fnew)
+}
+
+```
+
+# Remove comments
+
+
+```{r}
+files <- list.files(recursive = TRUE)
+files <- setdiff(files, c("data_preparation.Rmd", "README.md"))
+set.seed(13)
+
+for (f in files) {
+  lines <- readLines(f)
+  lines <- gsub(lines, pattern = "#.*", replacement = "")
+  writeLines(lines, f)
+}
+
+```
+
+
+
+
+# Start with proton
+
+
+```{r}
+files <- list.files(recursive = TRUE)
+files <- setdiff(files, c("data_preparation.Rmd", "README.md"))
+set.seed(13)
+
+for (f in files) {
+  lines <- readLines(f)
+  lines <- lines[lines!=""]
+  if (grepl("mtcars", lines[1])) {
+    start <- head(grep("proton", lines),1)
+    lines <- lines[start:length(lines)]
+  }
+  writeLines(lines, f)
+}
+
+```

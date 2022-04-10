@@ -1,0 +1,3 @@
+x=table(employees)
+sort(x)
+filter(employees,surname=="Insecure")

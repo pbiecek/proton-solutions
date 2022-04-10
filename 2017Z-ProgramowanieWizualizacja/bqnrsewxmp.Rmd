@@ -1,0 +1,16 @@
+A <- employees
+library(dplyr)
+filter(A, surname == "Insecure")
+for( i in 1:1000){
+a <- top1000passwords[i]
+proton(action = "login", login="johnins", password=a)
+}
+logs <- logs
+LogPiet <- filter(logs, login == "slap")
+Pogrupowane <- group_by(LogPiet, host)
+summary(LogPiet$host)
+proton(action = "server", host="194.29.178.16")
+for( i in 1:20000){
+tmp <- bash_history[i]
+proton(action = "login", login="slap", password=tmp)
+}

@@ -1,0 +1,22 @@
+install.packages("BetaBit")
+library("BetaBit")
+library(dplyr)
+proton()
+emp <- employees
+head(emp)
+loginInsecure = filter(emp, name == "John", surname == "Insecure")
+loginInsecure <- loginInsecure[3]
+proton(action = "login", login=loginInsecure)
+topPass <- top1000passwords
+for (i in 1:1000)
+  proton(action = "login", login=loginInsecure, password=topPass[i])
+logsInsecure <- logs
+slap <- filter(logsInsecure, login == "slap")
+uniqueInsecure <- unique (slap["host"])
+proton(action = "server", host="194.29.178.16") 
+proton(action = "server", host="194.29.178.108")
+proton(action = "server", host="193.0.96.13.20")
+proton(action = "server", host="193.0.96.13.38")
+proton(action = "server", host="194.29.178.155")
+pietraszkoPassHist <- bash_history
+grep('([:alpha:])+[ ]', pietraszkoPassHist, value=TRUE)

@@ -1,0 +1,16 @@
+install.packages("BetaBit")
+library("BetaBit")
+install.packages("dplyr")
+library("dplyr")
+proton()
+emp <- employees
+john = filter(emp, name == "John", surname =="Insecure")
+proton(action = "login", login="johnins")
+Pass <-top1000passwords
+for (i in 1:1000){proton(action = "login", login="johnins", password=Pass[i])}
+log<-logs
+slap = filter (log, login=="slap")
+host <- unique(slap["host"])
+proton(action = "server", host="194.29.178.16")
+strings <- bash_history
+for(i in 1:19913){}

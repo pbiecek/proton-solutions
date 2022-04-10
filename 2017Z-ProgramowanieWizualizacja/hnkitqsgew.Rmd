@@ -1,0 +1,18 @@
+library(BetaBit)
+em <- employees
+library(dplyr)
+login_John<-dplyr::filter(em,name=="John",surname=="Insecure") %>% select(login)
+login<-login_John$login
+proton(action = "login",login= login)
+top_pass <-top1000passwords
+for (i in top_pass){
+  x <- proton(action = "login", login="johnins", password=i)
+  if(length(grep(pattern = "Success", x = x)) == 1){
+    print(i)
+  }
+}
+filter(em , surname=="Pietraszko") %>% select(login)
+head(filter(logs, login=="slap"))
+slap <- group_by(filter(logs, login == "slap"), host)
+summarise(slap, count = n())
+proton(action = "server", host="194.29.178.16")

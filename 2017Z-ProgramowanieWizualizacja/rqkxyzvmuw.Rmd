@@ -1,0 +1,43 @@
+install.packages(PogromcyDanych)
+install.packages("PogromcyDanych")
+install.packages("PogromcyDanych")
+install.packages("BetaBit")```
+install.packages("BetaBit")
+install.packages("PogromcyDanych")
+library(PogromcyDanych)
+library(BetaBit)Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+library(BetaBit)
+proton()
+tabela_hase³<-data.frame(employees)
+proton(action = "login", login="johnins")
+has³a <- top1000passwords
+has³a <- top1000passwords
+has³a[1:1000]
+has³a[1:1000]
+for (i in 1:1000) {
+  proton(action = "login", login="johnins", password=has³a[i])
+  cat(paste("aktualna wartosc i to ", i, "\n"))
+}
+indeksy <- 1:1000
+indeksy[7]
+for (i in indeksy) {
+  proton(action = "login", login="johnins", password=has³a[i])
+  cat(paste("aktualna wartosc i to ", i, "\n"))
+}
+for (i in indeksy) {
+  proton(action = "login", login="johnins", password=has³a[i])
+}
+for (i in 1:1000) {
+  proton(action = "login", login="johnins", password="has³a[i])
+}
+for (i in 1:1000) {proton(action = "login", login="johnins", password="has³a[i]")}
+2+2
+stop
+interrupt R
+for (i in 1:1000) {proton(action = "login", login="johnins", password=has³a[i])}
+logowania -> dataset(logs)
+logowania = data.frame(logs)
+for (i in 1:1000) {proton(action = "login", login="johnins", password=has³a[i])}
+?logs
+logowania = data.frame(logs)
+proton(action = "server", host="194.29.178.143")

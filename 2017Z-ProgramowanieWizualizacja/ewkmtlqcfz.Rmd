@@ -1,0 +1,18 @@
+library("BetaBit")
+library("dplyr")
+proton()
+john<-filter(employees, name=="John", surname=="Insecure")
+john
+proton(action="login", login="johnins")
+for(i in top1000passwords){
+ if(proton(action="login", login="johnins", password=i)=="Success! User is logged in!"){
+   print(i)
+   }
+}
+head(logs)
+Pietraszko<-filter(employees, surname=="Pietraszko")
+Pietraszko
+logowania<-filter(logs, login=="slap")
+table(factor(logowania$host)) 
+proton(action="server", host="194.29.178.16")
+a<-strsplit(bash_history," ")

@@ -1,0 +1,8 @@
+proton()
+library(dplyr)
+arrange(pracownicy,nazwisko,imie)
+proton(action = "login", login="janie")
+for(i in top100passwords){proton(action = "login", login="janie", password=i)}
+filter(logowania,login=="slap")
+arrange(filter(logowania,login=="slap"),host)
+proton(action="server"", server="194.29.178.16")

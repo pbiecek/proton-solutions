@@ -1,0 +1,19 @@
+library(dplyr)
+library(proton)
+proton()
+employees %>%
+  filter(name == "John", surname == "Insecure") %>%
+  select(login)
+proton(action = "login", login="johnins")
+i = 1
+while(i<= 1000){
+  proton(action = "login", login="johnins", password = top1000passwords[i])
+  i = i+1
+}
+employees %>%
+  filter(surname == "Pietraszko") %>%
+  select(login)
+logs %>% filter(login == "slap") %>% count(host, sort = TRUE)
+proton(action = "server", host="194.29.178.16")
+gsub(" .*", "", bash_history) %>% data.frame() %>% distinct()
+proton(action = "login", login="slap", password="DHbb7QXppuHnaXGN")
